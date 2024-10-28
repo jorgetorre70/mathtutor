@@ -67,7 +67,7 @@ export const ProblemSolverPage = () => {
     <div className="chat-container">
       <div className="chat-messages">
         <div className="grid grid-cols-12 gap-y-2">
-          <GptMessage text="Hola, mi nombre es MathTutor y voy a ser tu asistente en Matemáticas. ¿Quieres que empecemos con tu diagnóstico?" />
+          <GptMessage text="Hola, soy MathTutor tu asistente para aprendizaje de matemáticas. ¿Te puedo ayudar?" />
 
           {messages.map((message, index) => {
             if (message.isGpt) {

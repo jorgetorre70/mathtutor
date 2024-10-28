@@ -4,6 +4,7 @@
 
 html,
 body {
+  /* background-color: #ffffff; */
   background-color: #000000;
   color: white;
   font-family: "Open Sans", sans-serif;
@@ -58,4 +59,11 @@ em {
   100% {
     opacity: 1;
   }
+}
+
+.amplify-image.auth-logo {
+  width: 500px !important; /* or whatever size you want */
+  height: auto !important;
+  margin: 0 auto;
+  display: block;
 }

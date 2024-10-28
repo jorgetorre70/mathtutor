@@ -1,23 +1,22 @@
 import { createBrowserRouter, Navigate } from "react-router-dom";
 import {
-  // ProblemSolverPage,
+  ProblemSolverPage,
   // TheoryHelperPage,
   // PlotVisualizationPage,
   // InteractiveExercisesPage,
   // FollowUpPage,
-  AssistantPage,
+  // AssistantPage,
 } from "../pages";
 import { DashboardLayout } from "../layouts/DashboardLayout";
 
 export const menuRoutes = [
-  // {
-  //   to: "/problemsolver",
-  //   icon: "fa-solid fa-book-open-reader",
-  //   title: "Diagnóstico inicial",
-  //   description:
-  //     "Ofrece diagnóstico inicial de habilidades matemáticas del estudiante",
-  //   component: <ProblemSolverPage />,
-  // },
+  {
+    to: "/problemsolver",
+    icon: "fa-solid fa-book-open-reader",
+    title: "Tutor",
+    description: "Apoyo personalizado para mejorar las habilidades matemáticas",
+    component: <ProblemSolverPage />,
+  },
   // {
   //   to: "/theoryhelper",
   //   icon: "fa-solid fa-code-compare",
@@ -46,13 +45,13 @@ export const menuRoutes = [
   //   description: "Muestra el progreso del usuario en diferentes áreas y temas",
   //   component: <FollowUpPage />,
   // },
-  {
-    to: "/assistant",
-    icon: "fa-solid fa-user",
-    title: "Asistente",
-    description: "Apoyo personalizado para mejorar las habilidades matemáticas",
-    component: <AssistantPage />,
-  },
+  // {
+  //   to: "/assistant",
+  //   icon: "fa-solid fa-user",
+  //   title: "Asistente",
+  //   description: "Apoyo personalizado para mejorar las habilidades matemáticas",
+  //   component: <AssistantPage />,
+  // },
 ];
 
 export const router = createBrowserRouter([
